@@ -34,7 +34,7 @@ const projects = [
 export function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-5xl px-6 py-24">
-      <h2 className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3 py-1 text-xs font-medium uppercase tracking-wide text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
+      <h2 className="text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
         Projects
       </h2>
       <p className="mt-4 text-2xl font-medium text-neutral-900 dark:text-white">
