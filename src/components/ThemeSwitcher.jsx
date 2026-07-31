@@ -7,7 +7,7 @@ export function ThemeSwitcher() {
   const { resolvedTheme, setTheme, theme } = useTheme("system");
 
   return (
-    <div className="flex items-center gap-1 rounded-full border border-neutral-200 p-1 dark:border-neutral-800">
+    <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-200 p-1 dark:border-neutral-800">
       <Button
         variant={resolvedTheme === "light" ? "primary" : "ghost"}
         size="sm"

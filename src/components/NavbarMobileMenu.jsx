@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@heroui/react";
 import { Bars, Xmark } from "@gravity-ui/icons";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const links = [
   { href: "#about", label: "About" },
@@ -37,6 +38,7 @@ export function NavbarMobileMenu() {
               {link.label}
             </Link>
           ))}
+          <ThemeSwitcher></ThemeSwitcher>
         </div>
       )}
     </div>
