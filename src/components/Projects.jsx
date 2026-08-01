@@ -26,7 +26,7 @@ const projects = [
     description:
       "A travel and destination booking app for browsing trips and reserving spots, built to explore booking flows outside the tutoring/course space.",
     tags: ["Next.js", "Express.js", "MongoDB"],
-    live: "https://wanderlust-lilac-three.vercel.app/",
+    live: "https://wanderlust-pearl-omega.vercel.app/",
     github: "https://github.com/pervezmia/wanderlust",
   },
 ];
