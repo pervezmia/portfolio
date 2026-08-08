@@ -27,6 +27,8 @@ export const projects = [
     ],
     challenge:
       "The trickiest bug was in the cancellation flow: an early version sent the tutor's ID instead of the booking's own _id when cancelling, so the wrong record's status was being checked. Fixing it meant tracing the request through the booking list component to confirm which ID was actually being passed, then correcting the API call to use the booking's _id.",
+    future:
+      "Real-time booking notifications (via WebSockets or a service like Pusher) so tutors get instantly alerted when a student books a slot, instead of relying on a dashboard refresh. Also planning to add a review/rating system for tutors post-session, and payment integration so bookings can be confirmed with an upfront deposit rather than trust-based scheduling.",
     stack: {
       frontend: "Next.js, Tailwind CSS, HeroUI, next-themes",
       backend: "Express.js, MongoDB, Better Auth",
@@ -38,8 +40,8 @@ export const projects = [
     title: "Mentora",
     tagline: "An online course marketplace with instructor and student roles.",
     tags: ["Next.js", "Express.js", "MongoDB", "Better Auth"],
-    live: "https://mentora.example.com",
-    github: "https://github.com/pervez/mentora",
+    live: "https://mentora-client-six.vercel.app/",
+    github: "https://github.com/pervezmia/mentora-client",
     problem:
       "Mentora was built to explore a two-sided platform: instructors need to create and manage courses, students need to browse and enroll. The goal was a role-based system where the same app behaves differently depending on who's logged in.",
     decisions: [
@@ -56,6 +58,8 @@ export const projects = [
     ],
     challenge:
       "Deployment was harder than development. The app worked locally but threw ECONNREFUSED errors during Vercel's prerender step, and hardcoded localhost URLs in API calls broke in production. Fixing it required moving all URLs into environment variables and setting them correctly in the Vercel dashboard for both preview and production environments.",
+    future:
+      "Adding a progress-tracking system for students (lesson completion, quizzes) to make the platform feel more like a full LMS rather than just enrollment management. Also planning course search/filtering by category and skill level, and a payment gateway for paid courses instead of the current open-enrollment model.",
     stack: {
       frontend: "Next.js, Tailwind CSS",
       backend: "Express.js (serverless-adapted), MongoDB, Better Auth",
@@ -66,8 +70,8 @@ export const projects = [
     title: "Wanderlust",
     tagline: "A travel and destination booking app.",
     tags: ["Next.js", "Express.js", "MongoDB"],
-    live: "https://wanderlust.example.com",
-    github: "https://github.com/pervez/wanderlust",
+    live: "https://wanderlust-pearl-omega.vercel.app/",
+    github: "https://github.com/pervezmia/wanderlust",
     problem:
       "Wanderlust was built to practice a booking flow outside the tutoring/course domain — browsing destinations, viewing details, and reserving a spot — using the same core stack as the other projects to compare how the same patterns adapt to a different kind of data.",
     decisions: [
@@ -79,6 +83,8 @@ export const projects = [
     ],
     challenge:
       "The main challenge was structuring destination data (locations, pricing, availability) in MongoDB in a way that stayed simple to query while still supporting filtering — an early version of the same filtering logic that got refined further in TutorBooking.",
+    future:
+      "The next step is adding real availability data — currently destinations don't check for date conflicts before confirming a reservation. Also planning to add user reviews per destination and image galleries per listing, since right now each destination only shows a single hero image.",
     stack: {
       frontend: "Next.js, Tailwind CSS",
       backend: "Express.js, MongoDB",

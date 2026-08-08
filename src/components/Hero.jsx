@@ -6,7 +6,7 @@ export function Hero() {
     <section className="mx-auto grid min-h-[80vh] max-w-5xl grid-cols-1 items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:gap-8">
       <div className="text-center lg:text-left">
         <span className="inline-flex rounded-full border border-neutral-200 px-4 py-1 text-sm text-neutral-600 dark:border-neutral-800 dark:text-neutral-400">
-          Available for freelance work
+          Open to full-time roles
         </span>
 
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">

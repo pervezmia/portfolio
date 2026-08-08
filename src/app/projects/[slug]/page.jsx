@@ -107,6 +107,17 @@ export default async function ProjectPage({ params }) {
         </p>
       </section>
 
+      {project.future && (
+        <section className="mt-12">
+          <h2 className="text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            Future improvements
+          </h2>
+          <p className="mt-3 text-neutral-700 dark:text-neutral-300">
+            {project.future}
+          </p>
+        </section>
+      )}
+
       <section className="mt-12">
         <h2 className="text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
           Stack
